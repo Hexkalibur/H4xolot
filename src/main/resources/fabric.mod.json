@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "h4xolot",
+  "version": "${version}",
+  "name": "H4xolot",
+  "description": "Meteor Client addon: block, delay, loop, log and fabricate Minecraft packets, with container click tools. One module per function.",
+  "authors": [
+    "TenebrisInLux"
+  ],
+  "contact": {
+    "sources": "https://github.com/TenebrisInLux/h4xolot"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/h4xolot/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "dev.h4xolot.H4xolotAddon"
+    ]
+  },
+  "mixins": [
+    "h4xolot.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
