@@ -74,6 +74,6 @@ public class H4xolotAddon extends MeteorAddon {
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("TenebrisInLux", "h4xolot");
+        return new GithubRepo("Hexkalibur", "h4xolot");
     }
 }
